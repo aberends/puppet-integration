@@ -1,4 +1,4 @@
-Name:         puppet-integration
+Name:         puppet-int-baseinfra
 Version:      0.1.1
 Release:      1
 Summary:      Basic infrastructure integration
