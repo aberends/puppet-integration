@@ -7,7 +7,7 @@ License:      GPL
 Vendor:       MSAT
 Source:       %{name}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-root
-Requires:     puppet-baseinfra
+Requires:     puppet-structure
 
 %description
 This Puppet code provides the glue between basic Puppet
