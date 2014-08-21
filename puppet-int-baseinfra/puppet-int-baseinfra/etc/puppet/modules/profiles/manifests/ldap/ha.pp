@@ -3,9 +3,9 @@ class profiles::ldap::ha {
 
   # Parameter lookups
   $layer1   = loadyaml("/var/lib/hiera/depzones/${depzone}/hosts/${fqdn}.yaml")
-  $instance = $layer1['ldap::ha::instance.]
-  $platform = $layer1['ldap::ha::platform.]
-  $subz     = $layer1['subzone.]
+  $instance = $layer1['ldap::ha::instance']
+  $platform = $layer1['ldap::ha::platform']
+  $subz     = $layer1['subzone']
   if $instance {
     $layer2 = loadyaml("/var/lib/hiera/depzones/${depzone}/platforms/${platform}/${instance}.yaml")
   } else {

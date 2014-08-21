@@ -38,6 +38,12 @@ class profiles::lvs::ldap {
     $layer1
   )
 
+  class{'::lvs::params':
+    lb_channel       => $h_lvs_ha['lvs::params::lb_channel'],
+  }
+  ->
+  class{'::lvs::install':}
+
   # Initialize module parameters
   class{'::lvs::ldap::params':
     backup           => $h_lvs_ha['lvs::ldap::params::backup'],
